@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<!--  Biotech remove "un-minifiable" tags -->
+<Operation Class="PatchOperationRemove">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="BasicRecharger" or defName="StandardRecharger" or defName="MechGestator" or defName="LargeMechGestator" or defName="SubcoreEncoder" or defName="SubcoreSoftscanner" or defName="SubcoreRipscanner" or defName="BandNode" or defName="ToxifierGenerator" or defName="GeneAssembler" or defName="GeneBank" or defName="GeneExtractor" or defName="GrowthVat" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="PollutionPump" or defName="WastepackAtomizer" or defName="SanguphageMeetingTorch" or defName="GeneProcessor" or defName="MechBooster" or defName="TrapIED_ToxGas" or defName="ToyBox" or defName="SchoolDesk" or defName="BabyDecoration" or defName="Crib" or defName="Blackboard" or defName="DeathrestCasket" or defName="Hemopump" or defName="HemogenAmplifier" or defName="GlucosoidPump" or defName="PsychofluidPump" or defName="DeathrestAccelerator" or defName="AncientMechGestator" or defName="AncientLargeMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientToxifierGenerator" or defName="AncientBandNode" or defName="AncientExostriderRemains" or defName="AncientExostriderLeg" or defName="AncientExostriderCannon" or defName="AncientExostriderHead"]/minifiedDef</xpath>
+</Operation>
+
+<!--  Biotech remove blank Categories -->
+<Operation Class="PatchOperationRemove">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="BasicRecharger" or defName="StandardRecharger" or defName="MechGestator" or defName="LargeMechGestator" or defName="SubcoreEncoder" or defName="SubcoreSoftscanner" or defName="SubcoreRipscanner" or defName="BandNode" or defName="ToxifierGenerator" or defName="GeneAssembler" or defName="GeneBank" or defName="GeneExtractor" or defName="GrowthVat" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="PollutionPump" or defName="WastepackAtomizer" or defName="SanguphageMeetingTorch" or defName="GeneProcessor" or defName="MechBooster" or defName="TrapIED_ToxGas" or defName="ToyBox" or defName="SchoolDesk" or defName="BabyDecoration" or defName="Crib" or defName="Blackboard" or defName="DeathrestCasket" or defName="Hemopump" or defName="HemogenAmplifier" or defName="GlucosoidPump" or defName="PsychofluidPump" or defName="DeathrestAccelerator" or defName="AncientMechGestator" or defName="AncientLargeMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientToxifierGenerator" or defName="AncientBandNode" or defName="AncientExostriderRemains" or defName="AncientExostriderLeg" or defName="AncientExostriderCannon" or defName="AncientExostriderHead"]/thingCategories</xpath>
+</Operation>
+
+<!--  Biotech building minify tag -->
+<Operation Class="PatchOperationAdd">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="BasicRecharger" or defName="StandardRecharger" or defName="MechGestator" or defName="LargeMechGestator" or defName="SubcoreEncoder" or defName="SubcoreSoftscanner" or defName="SubcoreRipscanner" or defName="BandNode" or defName="ToxifierGenerator" or defName="GeneAssembler" or defName="GeneBank" or defName="GeneExtractor" or defName="GrowthVat" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="PollutionPump" or defName="WastepackAtomizer" or defName="SanguphageMeetingTorch" or defName="GeneProcessor" or defName="MechBooster" or defName="TrapIED_ToxGas" or defName="ToyBox" or defName="SchoolDesk" or defName="BabyDecoration" or defName="Crib" or defName="Blackboard" or defName="DeathrestCasket" or defName="Hemopump" or defName="HemogenAmplifier" or defName="GlucosoidPump" or defName="PsychofluidPump" or defName="DeathrestAccelerator" or defName="AncientMechGestator" or defName="AncientLargeMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientToxifierGenerator" or defName="AncientBandNode" or defName="AncientExostriderRemains" or defName="AncientExostriderLeg" or defName="AncientExostriderCannon" or defName="AncientExostriderHead"]</xpath>
+	<value>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</value>
+</Operation>
+
+<!-- Biotech building categories -->
+<Operation Class="PatchOperationAdd">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="BasicRecharger" or defName="StandardRecharger" or defName="MechGestator" or defName="LargeMechGestator" or defName="SubcoreEncoder" or defName="SubcoreSoftscanner" or defName="SubcoreRipscanner" or defName="BandNode" or defName="ToxifierGenerator" or defName="GeneAssembler" or defName="GeneBank" or defName="GeneExtractor" or defName="GrowthVat" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="PollutionPump" or defName="WastepackAtomizer" or defName="SanguphageMeetingTorch" or defName="GeneProcessor" or defName="MechBooster" or defName="TrapIED_ToxGas" or defName="ToyBox" or defName="SchoolDesk" or defName="BabyDecoration" or defName="Crib" or defName="Blackboard" or defName="DeathrestCasket" or defName="AncientMechGestator" or defName="AncientLargeMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientToxifierGenerator" or defName="AncientBandNode" or defName="AncientExostriderRemains" or defName="AncientExostriderLeg" or defName="AncientExostriderCannon" or defName="AncientExostriderHead"]</xpath>
+	<value>
+		<thingCategories> <li>BuildingsMisc</li> </thingCategories>
+	</value>
+</Operation>
+
+<!-- Biotech building Mass -->
+<Operation Class="PatchOperationAdd">
+	<success>Always</success>
+	<xpath>Defs/ThingDef[defName="SubcoreSoftscanner" or defName="SubcoreRipscanner" or defName="TrapIED_ToxGas" or defName="AncientMechGestator" or defName="AncientLargeMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientToxifierGenerator" or defName="AncientBandNode" or defName="AncientExostriderRemains" or defName="AncientExostriderLeg" or defName="AncientExostriderCannon" or defName="AncientExostriderHead"]/statBases</xpath>
+	<value>
+	    <Mass>5</Mass>
+	</value>
+</Operation>
+
+</Patch>
